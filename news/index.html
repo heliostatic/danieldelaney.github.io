@@ -69,7 +69,7 @@
 			$.getJSON('https://api-news.layervault.com/api/v1/stories?client_id=770e8aef60ccf9f33e1f483af08f4fdc4ecc9b03de19273f66f657fd1800fefc').done(function(data) {
 				$.each(data.stories, function(i,item) {
 					$('#dn').append('<article>\
-							<a href="' + item.site_url + '">' + item.title + '</a>\
+							<a href="' + item.site_url.replace("https://api-news.layervault.com/", "https://news.layervault.com/") + '">' + item.title + '</a>\
 							<div class="subreddit">' + item.user_display_name + '</div>\
 						</article>');
 				});
