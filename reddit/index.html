@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>Reddit for Reading</title>
+	<style>
+		/*reset*/
+		*{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+		article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+		body{line-height:1;}
+		/*layout*/
+		body{margin:0 auto;max-width:30em;padding:1.5em;}
+		/*type*/
+		body{font-family:"ff-meta-serif-web-pro",georgia,serif;color:#333;line-height:1.5;}
+		h1,.opening-remarks,.subreddit,footer{font-family:"ff-meta-web-pro","Lucida Grande","Helvetica Neue",Helvetica,Arial,sans-serif;}
+		h1{font-weight:bold;text-transform:uppercase;letter-spacing:0.075em;color:#444;font-size:1.5em;line-height:1;}
+		h1 .flourish{font-family:georgia,serif;text-transform:lowercase;font-style:italic;font-weight:normal;color:#777;letter-spacing:0;margin-right:0.15em;font-size:0.8em;position:relative;top:-0.145em;}
+		article{margin-bottom:1.5em;}
+		.subreddit{text-transform:uppercase;letter-spacing:0.075em;color:#666;}
+		em{font-style:italic;}
+		.opening-remarks,footer{font-style:italic;color:#999;border-top:solid 0.1em #ccc;margin:1.5em 0;padding:1.5em 0;}
+		.opening-remarks,.subreddit,footer{font-size:0.8em;line-height:1.875;}
+		.opening-remarks{border-bottom:solid 0.1em #ccc;}
+		footer{margin-top:3em;}
+		footer em{font-style:normal;}
+		/*larger screens*/
+		@media (min-width:55em){
+			body{font-size:1.3em;padding:4.5em;}
+			h1{font-size:3em;line-height:1;}
+		}
+		/*detail*/
+		html{border-top:solid 0.4em #333;}
+	</style>
+</head>
+<body>
+	<h1>Reddit <span class="flourish">for</span> Reading</h1>
+	<p class="opening-remarks">The best Reddit has to offer on news, thought, and assorted peices of import and interest. Subreddit selections by Daniel Delaney.</p>
+	<ul id="reddit-data"></ul>
+	<footer>
+		<p>Loosely curated and typeset by Daniel Delaney. The typeface is <em>FF Meta Serif Web Pro</em>, designed by Erik Spiekermann, Christian Schwartz and Kris Sowersby and rendered here via Typekit.</p>
+	</footer>
+
+	<script src="//code.jquery.com/jquery-2.1.0.min.js"></script>
+	<script>
+		$( document ).ready(function() {
+
+			$.getJSON('https://pay.reddit.com/r/DepthHub+bestof+truereddit+AskHistorians+AskScience+Foodforthought+news+worldnews+science+technology.json?jsonp=?&limit=30').done(function(data) {
+				$.each(data.data.children, function(i,item) {
+					$('#reddit-data').append('<article>\
+							<a href="' + item.data.url + '">' + item.data.title + '</a>\
+							<div class="subreddit">' + item.data.subreddit + '</div>\
+						</article>');
+				});
+			});
+		});
+	</script>
+	<script type="text/javascript" src="//use.typekit.net/xmv6cto.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</body>
+</html>
