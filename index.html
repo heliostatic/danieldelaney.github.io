@@ -1,1 +1,208 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Interaction and visual design in Austin, TX." />
+	<meta name="author" content="Daniel Delaney" />
+	<title>Daniel Delaney</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
+	<style>
+		/*generic typographic style*/
+		body{-webkit-font-smoothing:antialiased;}
+		body,h1,h2,h3,h4,h5,h6,p,a{font-family:adelle-sans,helvetica,sans-serif;font-weight:400;}
+		h1,h2,h3,h4,h5,h6{font-weight:300;color:#444;}
+		h1{font-weight:600;color:#666;}
+		h2{font-weight:400;}
+		p{color:#666;font-weight:400;}
+		/*content*/
+		#hero,#work,#apps,footer{padding:20px 0;border-bottom:solid 1px #ddd;}
+		header{padding-top:20px;}
+		header a{color:#999;font-weight:400;}
+		header a:hover{color:#999;}
+		header .logo{font-weight:700;color:#ccc;}
+		header .contact{float:right;}
+		header .contact a{display:block;float:left;padding-left:1em;}
+		header .contact .text{display:none;}
+		#hero .lead{font-weight:300;}
+		#hero .btn{background:#61a461;color:#fff;border-color:#61a461;font-weight:600;}
+		#hero .btn:hover{color:#61a461;background:#fff;}
+		#work .sample{margin-bottom:40px;}
+		#work img{display:block;width:100%;max-width:400px;}
+		#more{padding:20px 0;border-bottom:solid 1px #ddd;display:block;}
+		#more:focus,#more:active,#more:hover{text-decoration:none;}
+		#more p{margin:0;}
+		#more strong{color:#555;}
+		#more .dribbble .link{color:#ea4c89;text-decoration:underline;}
+		#apps{border-bottom:0;}
+		#apps img{display:block;width:100%;max-width:5em;}
+		footer{border-bottom:0;background:#f9f9f9;}
+		footer p{margin:0;}
+		/*responsive qualities*/
+		@media (min-width:768px){
+			header{padding-top:40px;}
+			header .contact a{padding-left:1.5em;}
+			header .contact .text{display:inline;}
+			header .contact i{display:none;}
+			#hero{padding:100px 0 80px 0;border-bottom:0;}
+			#work{padding:0 0 0 0;}
+			#work p{margin-bottom:40px;}
+			#more{padding:30px 0;}
+			#apps{padding:80px 0;}
+			#apps h2{margin-top:0;margin-bottom:40px;}
+			#apps h3{margin-top:0;}
+			#apps p{margin-bottom:30px;}
+			footer{padding:40px 0;}
+		}
+		/*fix too-wide grid*/
+		@media (min-width:1200px){.container{max-width:970px;}}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<a href="http://danieldelaney.net/" class="logo">Daniel Delaney</a>
+					<div class="contact">
+						<a href="mailto:hello@danieldelaney.net"><i class=" fa fa-envelope-o"></i> <span class="text">E-mail</span></a>
+						<a href="http://dribbble.com/danieldelaney" target="_blank"><i class="fa fa-dribbble"></i> <span class="text">Dribbble</span></a>
+						<a href="http://www.linkedin.com/pub/daniel-delaney/3b/a7/258" target="_blank"><i class="fa fa-linkedin-square"></i> <span class="text">LinkedIn</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section id="hero">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1>Interaction and Visual Design</h1>
+					<p class="lead">I design clean, user-centered Web experiences.</p>
+					<a href="mailto:hello@danieldelaney.net" class="btn btn-default">E-mail Me</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="work">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="sample localpoint">
+						<img src="images/localpoint.png" alt="Localpoint" />
+						<h3>Localpoint</h3>
+						<p>User experience design for an enterprise-class, location-based marketing Web app.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="sample radioshack">
+						<a class="image">
+							<img src="images/radioshack.png" alt="RadioShack" />
+						</a>
+						<h3>RadioShack</h3>
+						<p>Interaction, visual design, and code for a series of mobile-optimized pages.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="sample reddit-reader">
+						<a class="image">
+							<img src="images/aps.png" alt="APS" />
+						</a>
+						<h3>Austin Poetry Slam</h3>
+						<p>A series of event posters commissioned by the Austin Poetry Slam.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="sample reddit-reader">
+						<a class="image">
+							<img src="images/reddit-reader.png" alt="Reddit Reader" />
+						</a>
+						<h3>Reddit Reader</h3>
+						<p>A personal project to make Reddit a simpler and more enjoyable experience.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="sample reddit-reader">
+						<a class="image">
+							<img src="images/store-guide.png" alt="Store Guide" />
+						</a>
+						<h3>Store Guide</h3>
+						<p>A mobile app feature that uses microlocation beacons to guide customers.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<a id="more" href="http://dribbble.com/danieldelaney" target="_blank">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="dribbble"><strong>Want to see more of my work?</strong> Take a look at my <span class="link">Dribbble</span>.</p>
+				</div>
+			</div>
+		</div>
+	</a>
+	<section id="apps">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h2>My Favorite Apps</h2>
+				</div>
+				<div class="col-md-1">
+					<img src="images/mockups.png" alt="Balsamiq" />
+				</div>
+				<div class="col-md-3">
+					<h3>Balsamiq</h3>
+					<p>Dead-simple wireframing and clickable mockups.</p>
+				</div>
+				<div class="col-md-1">
+					<img src="images/sketch.png" alt="Sketch" />
+				</div>
+				<div class="col-md-3">
+					<h3>Sketch</h3>
+					<p>Vector graphics tool for building crisp UI assets.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-4 col-md-1">
+					<img src="images/photoshop.png" alt="Photoshop" />
+				</div>
+				<div class="col-md-3">
+					<h3>Photoshop</h3>
+					<p>Ruler of raster. The one image editor to rule them all.</p>
+				</div>
+				<div class="col-md-1">
+					<img src="images/after-effects.png" alt="Photoshop" />
+				</div>
+				<div class="col-md-3">
+					<h3>After Effects</h3>
+					<p>Snazzy animations for UX documentation.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-1 col-md-offset-4">
+					<img src="images/sublime-text.png" alt="Sublime Text" />
+				</div>
+				<div class="col-md-3">
+					<h3>Sublime Text</h3>
+					<p>Writing code sometimes happens to the best of us.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<p>Copyright &copy; 2014 Daniel Delaney.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="//use.typekit.net/xmv6cto.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</body>
+</html>
