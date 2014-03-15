@@ -26,7 +26,7 @@
 		#hero .btn{background:#61a461;color:#fff;border-color:#61a461;}
 		#hero .btn:hover{color:#61a461;background:#fff;}
 		#work .sample{margin-bottom:40px;}
-		#work img{display:block;width:100%;max-width:400px;}
+		#work img{display:block;width:100%;}
 		#more{padding:20px 0;border-bottom:solid 1px #ddd;display:block;}
 		#more:focus,#more:active,#more:hover{text-decoration:none;}
 		#more p{margin:0;}
@@ -44,11 +44,10 @@
 			header .contact i{display:none;}
 			#hero{padding:100px 0 80px 0;border-bottom:0;}
 			#work{padding:0 0 0 0;}
-			#work p{margin-bottom:40px;}
 			#more{padding:30px 0;}
 			#apps{padding:80px 0;}
 			#apps h2{margin-top:0;margin-bottom:40px;}
-			#apps h3{margin-top:0;}
+			#apps h4{margin-top:0;}
 			#apps p{margin-bottom:30px;}
 			footer{padding:40px 0;}
 		}
@@ -75,8 +74,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<h1>Interaction and Visual Design</h1>
-					<p class="lead">I design clean, user-centered Web experiences.</p>
+					<h1>Experience Design for the Web</h1>
+					<p class="lead">Product strategy. Wireframes. Mockups. Animations. CSS.</p>
 					<a href="mailto:hello@danieldelaney.net" class="btn btn-default">E-mail Me</a>
 				</div>
 			</div>
@@ -85,50 +84,27 @@
 	<section id="work">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4">
-					<div class="sample localpoint">
- 						<img src="images/localpoint.png" alt="Localpoint" />
-						<h3>Localpoint</h3>
-						<p>User experience design for an enterprise-class, location-based marketing Web app.</p>
-					</div>
+				<div class="col-sm-4 sample">
+					<img src="images/localpoint.png" alt="Localpoint" />
+					<h4>Localpoint web app</h4>
 				</div>
-				<div class="col-md-4">
-					<div class="sample radioshack">
-						<a class="image">
-							<img src="images/radioshack.png" alt="RadioShack" />
-						</a>
-						<h3>RadioShack</h3>
-						<p>Interaction, visual design, and code for a series of mobile-optimized pages.</p>
-					</div>
+				<div class="col-sm-4 sample">
+					<img src="images/radioshack.png" alt="RadioShack" />
+					<h4>RadioShack mobile web project</h4>
 				</div>
-				<div class="col-md-4">
-					<div class="sample reddit-reader">
-						<a class="image">
-							<img src="images/aps.png" alt="APS" />
-						</a>
-						<h3>Austin Poetry Slam</h3>
-						<p>A series of event posters commissioned by the Austin Poetry Slam.</p>
-					</div>
+				<div class="col-sm-4 sample">
+					<img src="images/aps.png" alt="APS" />
+					<h4>Austin Poetry Slam posters</h4>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-4">
-					<div class="sample reddit-reader">
-						<a class="image">
-							<img src="images/reddit-reader.png" alt="Reddit Reader" />
-						</a>
-						<h3>Reddit Reader</h3>
-						<p>A personal project to make Reddit a simpler and more enjoyable experience.</p>
-					</div>
+				<div class="col-sm-4 sample">
+					<img src="images/reddit-reader.png" alt="Reddit Reader" />
+					<h4>Reddit Reader web app</h4>
 				</div>
-				<div class="col-md-4">
-					<div class="sample reddit-reader">
-						<a class="image">
-							<img src="images/store-guide.png" alt="Store Guide" />
-						</a>
-						<h3>Store Guide</h3>
-						<p>A mobile app feature that uses microlocation beacons to guide customers.</p>
-					</div>
+				<div class="col-sm-4 sample">
+					<img src="images/store-guide.png" alt="Store Guide" />
+					<h4>Store Guide mobile app</h4>
 				</div>
 			</div>
 		</div>
@@ -142,49 +118,49 @@
 			</div>
 		</div>
 	</a>
-	<section id="apps">
+	<section id="apps" class="hidden-xs">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-sm-4">
 					<h2>My Favorite Apps</h2>
 				</div>
-				<div class="col-md-1">
+				<div class="col-sm-1">
 					<img src="images/mockups.png" alt="Balsamiq" />
 				</div>
-				<div class="col-md-3">
-					<h3>Balsamiq</h3>
+				<div class="col-sm-3">
+					<h4>Balsamiq</h4>
 					<p>Dead-simple wireframing and clickable mockups.</p>
 				</div>
-				<div class="col-md-1">
+				<div class="col-sm-1">
 					<img src="images/sketch.png" alt="Sketch" />
 				</div>
-				<div class="col-md-3">
-					<h3>Sketch</h3>
+				<div class="col-sm-3">
+					<h4>Sketch</h4>
 					<p>Vector graphics tool for building crisp UI assets.</p>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-offset-4 col-md-1">
+				<div class="col-sm-offset-4 col-sm-1">
 					<img src="images/photoshop.png" alt="Photoshop" />
 				</div>
-				<div class="col-md-3">
-					<h3>Photoshop</h3>
+				<div class="col-sm-3">
+					<h4>Photoshop</h4>
 					<p>Ruler of raster. The one image editor to rule them all.</p>
 				</div>
-				<div class="col-md-1">
+				<div class="col-sm-1">
 					<img src="images/after-effects.png" alt="Photoshop" />
 				</div>
-				<div class="col-md-3">
-					<h3>After Effects</h3>
+				<div class="col-sm-3">
+					<h4>After Effects</h4>
 					<p>Snazzy animations for UX documentation.</p>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-1 col-md-offset-4">
+				<div class="col-sm-1 col-sm-offset-4">
 					<img src="images/sublime-text.png" alt="Sublime Text" />
 				</div>
-				<div class="col-md-3">
-					<h3>Sublime Text</h3>
+				<div class="col-sm-3">
+					<h4>Sublime Text</h4>
 					<p>Writing code sometimes happens to the best of us.</p>
 				</div>
 			</div>
