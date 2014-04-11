@@ -29,17 +29,19 @@
 		#work .sample{margin-bottom:40px;}
 		#work img{display:block;width:100%;}
 		#more{padding:20px 0;border-top:solid 1px #ddd;border-bottom:solid 1px #ddd;display:block;}
-		#more:hover{border-color:#ea4c89;}
 		#more:hover *{color:#ea4c89;}
 		#more p{margin:0;}
 		#more strong{color:#555;}
-		#more .dribbble .link{color:#ea4c89;text-decoration:underline;}
+		#more .dribbble .link{color:#ea4c89;}
 		#more:hover .dribbble .link{text-decoration:none;}
 		#apps{border-bottom:0;}
 		#apps img{display:block;width:100%;max-width:5em;}
 		footer{border-bottom:0;background:#f9f9f9;}
 		footer p{margin:0;}
 		/*responsive qualities*/
+		@media (max-width:768px){
+			.container{width:420px;}
+		}
 		@media (min-width:768px){
 			header{padding-top:40px;}
 			header .contact a{padding-left:1.5em;}
