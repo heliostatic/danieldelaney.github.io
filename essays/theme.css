@@ -1,0 +1,27 @@
+/*reset*/
+*{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+body{line-height:1;}
+/*layout*/
+body{margin:0 auto;max-width:30em;padding:1.5em;}
+/*type*/
+body{font-family:"ff-meta-serif-web-pro",georgia,serif;color:#333;line-height:1.5;}
+h1,.opening-remarks,.pull-quote,footer{font-family:"ff-meta-web-pro","Lucida Grande","Helvetica Neue",Helvetica,Arial,sans-serif;}
+h1{font-weight:bold;text-transform:uppercase;letter-spacing:0.075em;color:#444;font-size:1.5em;line-height:1;}
+h1 .flourish{font-family:georgia,serif;text-transform:lowercase;font-style:italic;font-weight:normal;color:#777;letter-spacing:0;margin-right:0.15em;font-size:0.8em;position:relative;top:-0.145em;}
+p+p{text-indent:1.5em;}
+em{font-style:italic;}
+.pull-quote{font-size:1.25em;line-height:1.2;margin:1.2em 0;padding:1.2em 0;}
+.opening-remarks,.pull-quote,footer{font-style:italic;color:#999;border-top:solid 0.1em #ccc;margin:1.5em 0;padding:1.5em 0;}
+.opening-remarks,footer{font-size:0.8em;line-height:1.875;}
+.opening-remarks,.pull-quote{border-bottom:solid 0.1em #ccc;}
+.pull-quote{text-indent:0;}
+footer{margin-top:3em;}
+.opening-remarks em,.pull-quote em,footer em{font-style:normal;}
+/*larger screens*/
+@media (min-width:55em){
+	body{font-size:1.3em;padding:4.5em;}
+	h1{font-size:3em;line-height:1;}
+}
+/*detail*/
+html{border-top:solid 0.4em #333;}
